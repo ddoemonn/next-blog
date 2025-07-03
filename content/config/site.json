@@ -1,0 +1,19 @@
+{
+  "title": "My Blog",
+  "description": "A simple self-hosted blog platform",
+  "url": "https://localhost:3000",
+  "author": "Blog Author",
+  "theme": "minimal",
+  "features": {
+    "darkMode": true,
+    "search": true,
+    "rss": true,
+    "comments": true,
+    "votes": true
+  },
+  "social": {
+    "twitter": "",
+    "github": "",
+    "email": ""
+  }
+} 

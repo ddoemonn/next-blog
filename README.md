@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# next-blog
 
-## Getting Started
+A self-hosted blog platform built with Next.js 14, MDX, and Tailwind CSS.
 
-First, run the development server:
+## Features
+
+- **Admin Dashboard** - Clean interface to create posts with markdown
+- **Live Preview** - See your content as you write
+- **Fully Customizable** - Fork and customize styling with Tailwind CSS
+- **No Database** - File-based content
+- **MDX Support** - Markdown with React components
+
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+# Clone and install
+git clone https://github.com/yourusername/next-blog.git
+cd next-blog
+bun install
+
+# Set up environment
+cp env.example .env.local
+# Edit .env.local and add your JWT_SECRET
+
+# Start development
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` and go to `/login` to access the admin dashboard.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Fork this repository
+2. Edit components in `components/`
+3. Modify styles with Tailwind CSS
+4. Configure site settings in `content/config/site.json`
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Works on any platform that supports Next.js:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Vercel (recommended)
+- Netlify
+- Railway
+- Self-hosted
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Built with Next.js, MDX, and Tailwind CSS**

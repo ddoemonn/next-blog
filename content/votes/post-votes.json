@@ -1,0 +1,23 @@
+{
+  "welcome-to-my-blog": {
+    "upvotes": 1,
+    "downvotes": 0,
+    "voters": [
+      "::1"
+    ]
+  },
+  "zer": {
+    "upvotes": 1,
+    "downvotes": 0,
+    "voters": [
+      "::1"
+    ]
+  },
+  "remote-work-productivity-guide": {
+    "upvotes": 1,
+    "downvotes": 0,
+    "voters": [
+      "::1"
+    ]
+  }
+}
