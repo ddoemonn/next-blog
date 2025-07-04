@@ -22,6 +22,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import type { Post } from '@/lib/posts'
 import type { PostVotes } from '@/lib/votes'
+import { calculateReadingTime } from '@/lib/reading-time'
 
 interface PlayfulLandingProps {
   posts: (Post & { votes: PostVotes })[]
@@ -267,7 +268,7 @@ export function PlayfulLanding({ posts }: PlayfulLandingProps) {
                       </div>
                       <div className="flex items-center gap-1">
                         <BookOpen className="w-4 h-4" />
-                        {Math.ceil(post.content.split(' ').length / 200)} min read
+                        {calculateReadingTime(post.content)}
                       </div>
                     </div>
                     
