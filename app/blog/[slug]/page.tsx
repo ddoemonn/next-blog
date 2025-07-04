@@ -5,6 +5,7 @@ import { getPostVotes } from '@/lib/votes'
 import { VoteButtons } from '@/components/blog/vote-buttons'
 import { MDXContent } from '@/components/blog/mdx-content'
 import { ArrowLeft } from 'lucide-react'
+import { calculateReadingTime } from '@/lib/reading-time'
 
 interface BlogPostPageProps {
   params: {
@@ -54,6 +55,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 })}
               </time>
               <VoteButtons postSlug={params.slug} initialVotes={votes} />
+              <p>{calculateReadingTime(post.content)}</p>
             </div>
             
             {post.frontMatter.excerpt && (
