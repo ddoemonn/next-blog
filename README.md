@@ -40,9 +40,13 @@ Visit `http://localhost:3000` and go to `/login` to access the admin dashboard.
 
 ## Deployment
 
-Works on any platform that supports Next.js:
+Launch this project on Diploi:
 
-- Vercel (recommended)
+[![launch with diploi button](https://diploi.com/launch-big.svg)](https://diploi.com/launch/ddoemonn/next-blog)
+
+Also deployable on any platform that supports Next.js:
+
+- Vercel
 - Netlify
 - Railway
 - Self-hosted
